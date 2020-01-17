@@ -2,7 +2,7 @@
 
 // Module dependencies;
 const Sequelize = require('sequelize');
-const databaseName = require('../utilities/databaseName');
+const databaseName = require('../utilities/databaseName').default;
 
 // Confirmation message (limit these in production);
 console.log('Opening database connection');
