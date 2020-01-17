@@ -16,7 +16,6 @@ const Campus = define("campus", {
 
     allStudents: {
         type: Sequelize.ARRAY,
-        unique: true,
         allowNull: false
     },
 

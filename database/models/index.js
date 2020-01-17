@@ -1,7 +1,18 @@
+import Campus from "./campus";
+
 // Here, we can prepare to register our models, set up associations between tables, and generate a barrel file for the models;
 
-import Player from './player';
+const Student = require("./student");
+const student = require("./campus");
+
+
+//Let's prepare  our associations 
+//O:M
+Campus.hasMany(Student);
+//O:O
+Student.belongsTo(Campus);
 
 export default {
-    Player
+    Student,
+    Campus
 };
